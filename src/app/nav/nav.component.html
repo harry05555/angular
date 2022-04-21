@@ -1,9 +1,10 @@
 <header>
-    <img src="assets/logo/LogoMakr.png" >
+    <img *ngIf="darkMode" routerLink="/" src="assets/logo/Logowith.png">
+    <img *ngIf="!darkMode" routerLink="/" src="assets/logo/LogoMakr.png">
     <div>
-        <a href="#">Home</a>
+        <a routerLink="/">Home</a>
         <a href="#">Lebenslauf</a>
         <a href="#">Projekte</a>
-        <a href="#">Impressum</a>
+        <a routerLink="/imprint">Impressum</a>
     </div>
 </header>
